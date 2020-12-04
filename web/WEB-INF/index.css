@@ -1,0 +1,178 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 19, 2020, 10:58:53 AM
+    Author     : hp
+*/
+@import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(https://fonts.google.com/specimen/Dancing+Script?selection.family=Dancing+Script:wght@700#standard-styles);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #fff;
+
+    color: #fff;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+@font-face {
+    font-family: 'Dancing Script';
+    font: url(https://fonts.google.com/specimen/Dancing+Script?selection.family=Dancing+Script:wght@700#standard-styles)
+}
+.body{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -40px;
+    bottom: -40px;
+    width: auto;
+    height: auto;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f85ca583-3ff1-4b1d-9964-b0d0b53f2338/d86yphl-d49fa700-f3cf-4ab3-8c32-a15a26015a0f.jpg/v1/fill/w_1024,h_647,q_75,strp/journey_to_the_west_by_gavi_gavi_d86yphl-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD02NDciLCJwYXRoIjoiXC9mXC9mODVjYTU4My0zZmYxLTRiMWQtOTk2NC1iMGQwYjUzZjIzMzhcL2Q4NnlwaGwtZDQ5ZmE3MDAtZjNjZi00YWIzLThjMzItYTE1YTI2MDE1YTBmLmpwZyIsIndpZHRoIjoiPD0xMDI0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.MrKOgdhnnaMb0zem0OoudnOssNEyqxRKZz-xyjtXNOY);
+    background-size: cover;
+    -webkit-filter: blur(6px);
+    z-index: 0;
+}
+
+.grad{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -40px;
+    bottom: -40px;
+    width: auto;
+    height: auto;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); 
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.header{
+    position: absolute;
+    top: calc(50% - 35px);
+    left: calc(33% - 255px);
+    z-index: 2;
+}
+
+.header div{
+    float: left;
+    color: #fff;
+    font-family: 'Dancing Script';
+    font-size: 70px;
+    font-weight: 1000;
+}
+
+.header div span{
+    color: #e08400 !important;
+}
+
+.login{
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 50px);
+    height: 150px;
+    width: 350px;
+    padding: 10px;
+    z-index: 2;
+}
+
+.login input[type=text]{
+    width: 250px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px;
+}
+
+.login input[type=password]{
+    width: 250px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px;
+    margin-top: 10px;
+}
+
+.login input[type=submit]{
+    width: 260px;
+    height: 35px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px;
+    margin-top: 10px;
+}
+
+.login input[type=submit]:hover{
+    opacity: 0.8;
+}
+
+.login input[type=submit]:active{
+    opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+    outline: none;
+    border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=password]:focus{
+    outline: none;
+    border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=submit]:focus{
+    outline: none;
+}
+
+::-webkit-input-placeholder{
+    color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+    color: rgba(255,255,255,0.6);
+}
+
+input[type=submit]{
+    /*    background-color: #ff9e14;
+        border: none;
+        color: white;
+        padding: 10px 32px;
+        width: 260px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+    
+    */
+    width: 260px;
+    height: 35px;
+    background: #ff9e14;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px;
+    margin-top: 10px;
+}
+
